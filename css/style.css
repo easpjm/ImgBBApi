@@ -1,0 +1,55 @@
+#content-img > .figure {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+#content-img > .figure:hover > .curtain{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.figure > .curtain{
+    background-color: rgba(0, 0, 0, .5);
+    height: 176px;
+    position: absolute;
+    text-align: right;
+    visibility: hidden;
+    opacity: 1;
+    transition: all linear .2s;
+    width: 176px;
+}
+
+.figure > .curtain > button.close{
+    background: none;
+    border: none;
+    color: snow;
+    margin: 5px;
+}
+
+.img-preview img {
+    /* width: 50%; */
+}
+
+.alert{
+    border-radius: 5px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.error {
+    background-color: rgb(240, 68, 68);
+    color: whitesmoke;
+}
+
+.success{
+    background-color: rgb(73, 197, 104);
+    color: whitesmoke;
+}
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader Image</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  
+</head>
+<!-- Subir imagenes al repositorio imgbb con cUrl php, javascript y localstorage -->
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h3 class="text-center mb-4">Subir imágenes</h3>
+            <div class="col-md-4">
+                <!-- <div id="alert" class="alert"></div> -->
+                <form id="formMain" class="form-floating" enctype="multipart/form-data">
+                    <input type="text" class="form-control" id="imgName" name="imgName" placeholder="Titulo de la imagen"
+                        autocomplete="off">
+                    <label for="imgName">Titulo de la imagen</label>
+                    <div class="mb-3 mt-3">
+                        <label for="formFile" class="form-label">Seleccione la imagen que desea subir</label>
+                        <input class="form-control" name="img" type="file" id="formFile">
+                    </div>
+                </form>
+                <div class="img-preview">
+                    <small>Vista previa</small><br>
+                    <i class="fas fa-image fa-5x"></i>
+                </div>
+                <div class="d-grid mt-3">
+                    <button id="btnSend" class="btn btn-primary">Subir <i class="fas fa-cloud-upload-alt"></i></button>
+                </div>
+            </div>
+            <div class="col-md-8 mt-3">
+                <div class="row" id="content-img"></div>
+            </div>
+        </div>
+    </div>
+    <script defer src="./js/notiflix-aio-2.7.0.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>
